@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21A559" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="DefenitionEntity" representedClassName="DefenitionEntity" syncable="YES">
+        <attribute name="definition" attributeType="String"/>
+        <attribute name="example" optional="YES" attributeType="String"/>
+        <relationship name="meaning" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="MeaningEntity" inverseName="defenitions" inverseEntity="MeaningEntity"/>
+    </entity>
+    <entity name="MeaningEntity" representedClassName="MeaningEntity" syncable="YES">
+        <attribute name="partOfSpeech" attributeType="String"/>
+        <relationship name="defenitions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="DefenitionEntity" inverseName="meaning" inverseEntity="DefenitionEntity"/>
+        <relationship name="word" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="WordEntity" inverseName="meanings" inverseEntity="WordEntity"/>
+    </entity>
+    <entity name="WordEntity" representedClassName="WordEntity" syncable="YES">
+        <attribute name="origin" optional="YES" attributeType="String"/>
+        <attribute name="word" attributeType="String"/>
+        <relationship name="meanings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="MeaningEntity" inverseName="word" inverseEntity="MeaningEntity"/>
+    </entity>
+    <elements>
+        <element name="DefenitionEntity" positionX="-54" positionY="0" width="128" height="74"/>
+        <element name="MeaningEntity" positionX="-36" positionY="18" width="128" height="74"/>
+        <element name="WordEntity" positionX="-63" positionY="-18" width="128" height="74"/>
+    </elements>
+</model>

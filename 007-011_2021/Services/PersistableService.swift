@@ -56,7 +56,7 @@ class PersistableService {
         let wordEntity = WordEntity(context: viewContext)
         wordEntity.setProperties(word: word)
         
-        for meaning in word.meanings {
+        for meaning in word.meanings! {
             addMeaningToCD(wordEntity: wordEntity, meaning: meaning)
         }
         
@@ -67,7 +67,7 @@ class PersistableService {
         let meaningEntity = MeaningEntity(context: viewContext)
         meaningEntity.setProperties(wordEntity: wordEntity, meaning: meaning)
         
-        for defenition in meaning.definitions {
+        for defenition in meaning.definitions! {
             addDefenitionToCD(meaning: meaningEntity, defenition: defenition)
         }
     }

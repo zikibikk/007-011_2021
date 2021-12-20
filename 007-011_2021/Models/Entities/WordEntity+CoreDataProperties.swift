@@ -22,8 +22,8 @@ extension WordEntity {
     
     func setProperties(word: Word) {
         self.word = word.word
-        self.meanings = NSSet(array: word.meanings ?? [])
-        self.origin = word.origin
+        self.meanings = NSSet(array: word.meanings!)
+        self.origin = word.origin!
     }
 }
 

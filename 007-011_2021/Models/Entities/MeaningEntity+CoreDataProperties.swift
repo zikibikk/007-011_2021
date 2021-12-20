@@ -22,7 +22,7 @@ extension MeaningEntity {
 
     func setProperties(wordEntity: WordEntity, meaning: Meanings) {
         self.word = wordEntity
-        self.partOfSpeech = meaning.partOfSpeech
+        self.partOfSpeech = meaning.partOfSpeech!
         self.defenitions = NSSet(array: meaning.definitions ?? [])
     }
 }

@@ -22,8 +22,8 @@ extension DefenitionEntity {
     
     func setProperties(meaning: MeaningEntity, defenition: Definitions) {
         self.meaning = meaning
-        self.definition = defenition.definition
-        self.example = defenition.example
+        self.definition = defenition.definition!
+        self.example = defenition.example!
     }
 
 }

@@ -29,7 +29,7 @@ class WordTableViewCell: UITableViewCell {
     
     func configure(word: Word) -> Void {
         wordLabel.text = word.word
-        speachPartLabel.text = word.meanings?[0].partOfSpeech
+        speachPartLabel.text = word.meanings![0].partOfSpeech
     }
 }
 

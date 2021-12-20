@@ -15,7 +15,6 @@
 		4DA9A2782748F00100070A45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA9A2762748F00100070A45 /* LaunchScreen.storyboard */; };
 		7C6637E7276F68B900765983 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6637E6276F68B900765983 /* Word.swift */; };
 		7C6637EA276F691200765983 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6637E9276F691200765983 /* NetworkService.swift */; };
-		7C7F1D73276F4C1700669E53 /* 007-011_2021.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D71276F4C1700669E53 /* 007-011_2021.xcdatamodeld */; };
 		7C7F1D75276F4F9B00669E53 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D74276F4F9B00669E53 /* SearchViewController.swift */; };
 		7C7F1D77276F4FBA00669E53 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D76276F4FBA00669E53 /* SavedViewController.swift */; };
 		7C7F1D79276F4FDE00669E53 /* PersistableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D78276F4FDE00669E53 /* PersistableService.swift */; };
@@ -28,6 +27,7 @@
 		7C8952D327702FCB00B4FA8A /* WordEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8952CD27702FCB00B4FA8A /* WordEntity+CoreDataProperties.swift */; };
 		7C8952D427702FCB00B4FA8A /* MeaningEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8952CE27702FCB00B4FA8A /* MeaningEntity+CoreDataClass.swift */; };
 		7C8952D527702FCB00B4FA8A /* MeaningEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8952CF27702FCB00B4FA8A /* MeaningEntity+CoreDataProperties.swift */; };
+		7CF61B6627711799007A92BA /* 007-011_2021.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CF61B6427711799007A92BA /* 007-011_2021.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +41,6 @@
 		4DA9A2792748F00100070A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C6637E6276F68B900765983 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
 		7C6637E9276F691200765983 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		7C7F1D72276F4C1700669E53 /* 007-011_2021.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "007-011_2021.xcdatamodel"; sourceTree = "<group>"; };
 		7C7F1D74276F4F9B00669E53 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7C7F1D76276F4FBA00669E53 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		7C7F1D78276F4FDE00669E53 /* PersistableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistableService.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		7C8952CD27702FCB00B4FA8A /* WordEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WordEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7C8952CE27702FCB00B4FA8A /* MeaningEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeaningEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7C8952CF27702FCB00B4FA8A /* MeaningEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeaningEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7CF61B6527711799007A92BA /* 007-011_2021.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "007-011_2021.xcdatamodel"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 				7C6637ED276F696600765983 /* Base */,
 				4DA9A2742748F00100070A45 /* Assets.xcassets */,
 				4DA9A2792748F00100070A45 /* Info.plist */,
-				7C7F1D71276F4C1700669E53 /* 007-011_2021.xcdatamodeld */,
+				7CF61B6427711799007A92BA /* 007-011_2021.xcdatamodeld */,
 			);
 			path = "007-011_2021";
 			sourceTree = "<group>";
@@ -244,6 +244,7 @@
 				7C8952D527702FCB00B4FA8A /* MeaningEntity+CoreDataProperties.swift in Sources */,
 				7C8952D327702FCB00B4FA8A /* WordEntity+CoreDataProperties.swift in Sources */,
 				7C8952D427702FCB00B4FA8A /* MeaningEntity+CoreDataClass.swift in Sources */,
+				7CF61B6627711799007A92BA /* 007-011_2021.xcdatamodeld in Sources */,
 				7C6637E7276F68B900765983 /* Word.swift in Sources */,
 				7C8952C62770256200B4FA8A /* Meanings.swift in Sources */,
 				7C7F1D7C276F503900669E53 /* WordTableViewCell.swift in Sources */,
@@ -255,7 +256,6 @@
 				7C8952C8277025D200B4FA8A /* Definitions.swift in Sources */,
 				7C6637EA276F691200765983 /* NetworkService.swift in Sources */,
 				4DA9A26E2748EFFF00070A45 /* SceneDelegate.swift in Sources */,
-				7C7F1D73276F4C1700669E53 /* 007-011_2021.xcdatamodeld in Sources */,
 				7C8952D127702FCB00B4FA8A /* DefenitionEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,12 +480,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7C7F1D71276F4C1700669E53 /* 007-011_2021.xcdatamodeld */ = {
+		7CF61B6427711799007A92BA /* 007-011_2021.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7C7F1D72276F4C1700669E53 /* 007-011_2021.xcdatamodel */,
+				7CF61B6527711799007A92BA /* 007-011_2021.xcdatamodel */,
 			);
-			currentVersion = 7C7F1D72276F4C1700669E53 /* 007-011_2021.xcdatamodel */;
+			currentVersion = 7CF61B6527711799007A92BA /* 007-011_2021.xcdatamodel */;
 			path = "007-011_2021.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
