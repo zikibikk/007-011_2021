@@ -19,7 +19,7 @@
 		7C7F1D75276F4F9B00669E53 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D74276F4F9B00669E53 /* SearchViewController.swift */; };
 		7C7F1D77276F4FBA00669E53 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D76276F4FBA00669E53 /* SavedViewController.swift */; };
 		7C7F1D79276F4FDE00669E53 /* PersistableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D78276F4FDE00669E53 /* PersistableService.swift */; };
-		7C7F1D7C276F503900669E53 /* SavedWordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D7B276F503900669E53 /* SavedWordTableViewCell.swift */; };
+		7C7F1D7C276F503900669E53 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D7B276F503900669E53 /* WordTableViewCell.swift */; };
 		7C7F1D83276F505D00669E53 /* MeaningEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D7D276F505D00669E53 /* MeaningEntity+CoreDataClass.swift */; };
 		7C7F1D84276F505D00669E53 /* MeaningEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D7E276F505D00669E53 /* MeaningEntity+CoreDataProperties.swift */; };
 		7C7F1D85276F505D00669E53 /* DefenitionEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F1D7F276F505D00669E53 /* DefenitionEntity+CoreDataClass.swift */; };
@@ -43,7 +43,7 @@
 		7C7F1D74276F4F9B00669E53 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		7C7F1D76276F4FBA00669E53 /* SavedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
 		7C7F1D78276F4FDE00669E53 /* PersistableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistableService.swift; sourceTree = "<group>"; };
-		7C7F1D7B276F503900669E53 /* SavedWordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedWordTableViewCell.swift; sourceTree = "<group>"; };
+		7C7F1D7B276F503900669E53 /* WordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
 		7C7F1D7D276F505D00669E53 /* MeaningEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeaningEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7C7F1D7E276F505D00669E53 /* MeaningEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MeaningEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7C7F1D7F276F505D00669E53 /* DefenitionEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DefenitionEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 		7C7F1D7A276F500100669E53 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7C7F1D7B276F503900669E53 /* SavedWordTableViewCell.swift */,
+				7C7F1D7B276F503900669E53 /* WordTableViewCell.swift */,
 				7C6637E6276F68B900765983 /* Word.swift */,
 				7C7F1D89276F516E00669E53 /* Entities */,
 			);
@@ -229,7 +229,7 @@
 				7C7F1D87276F505D00669E53 /* WordEntity+CoreDataClass.swift in Sources */,
 				7C6637E7276F68B900765983 /* Word.swift in Sources */,
 				7C7F1D88276F505D00669E53 /* WordEntity+CoreDataProperties.swift in Sources */,
-				7C7F1D7C276F503900669E53 /* SavedWordTableViewCell.swift in Sources */,
+				7C7F1D7C276F503900669E53 /* WordTableViewCell.swift in Sources */,
 				7C7F1D77276F4FBA00669E53 /* SavedViewController.swift in Sources */,
 				7C7F1D75276F4F9B00669E53 /* SearchViewController.swift in Sources */,
 				4DA9A2702748EFFF00070A45 /* ViewController.swift in Sources */,

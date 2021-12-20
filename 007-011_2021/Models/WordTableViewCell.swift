@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SavedWordTableViewCell: UITableViewCell {
+class WordTableViewCell: UITableViewCell {
     
     //MARK: IBOutlets
     
@@ -29,7 +29,7 @@ class SavedWordTableViewCell: UITableViewCell {
     
     func configure(word: Word) -> Void {
         wordLabel.text = word.word
-        speachPartLabel.text = word.speachPart
+        //speachPartLabel.text = word.speachParts
     }
 }
 

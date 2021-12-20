@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J4o-jH-CeF">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F3L-tF-hrF">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,31 +13,31 @@
             <objects>
                 <viewController id="LPh-aM-BrM" customClass="SavedViewController" customModule="_07_011_2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="trA-Fw-MJq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bwg-dU-3UH">
-                                <rect key="frame" x="20" y="49" width="374" height="754"/>
+                                <rect key="frame" x="20" y="93" width="350" height="658"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="wEY-m6-p1N" customClass="SavedWordTableViewCell" customModule="_07_011_2021" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="74"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WordTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="wEY-m6-p1N" customClass="WordTableViewCell" customModule="_07_011_2021" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="350" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wEY-m6-p1N" id="FAB-Nj-PfG">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-s9-xvr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="74"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="74"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xqg-fz-ac3">
-                                                            <rect key="frame" x="0.0" y="0.0" width="244.5" height="74"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="220.66666666666666" height="74"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="500" text="Speach Part" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AdI-pP-eQC">
-                                                            <rect key="frame" x="254.5" y="0.0" width="119.5" height="74"/>
+                                                            <rect key="frame" x="230.66666666666666" y="0.0" width="119.33333333333334" height="74"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
                                                             <color key="textColor" systemColor="systemGrayColor"/>
                                                             <nil key="highlightedColor"/>
@@ -83,19 +83,19 @@
             <objects>
                 <viewController id="9qj-8Z-ewZ" customClass="SearchViewController" customModule="_07_011_2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fgi-RB-lvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0K4-Nt-nCN">
-                                <rect key="frame" x="20" y="350" width="374" height="39"/>
+                                <rect key="frame" x="20" y="62" width="350" height="39"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write your word here" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="hg0-Uc-RVe">
-                                        <rect key="frame" x="0.0" y="0.0" width="254" height="39"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="230" height="39"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18p-Jv-0Dd">
-                                        <rect key="frame" x="274" y="0.0" width="100" height="39"/>
+                                        <rect key="frame" x="250" y="0.0" width="100" height="39"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <color key="tintColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Button"/>
@@ -114,18 +114,66 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ2-33-RcT">
+                                <rect key="frame" x="20" y="121" width="350" height="640"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WordTableViewCell" rowHeight="74" id="uzD-gv-o8A" customClass="WordTableViewCell" customModule="_07_011_2021" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="350" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uzD-gv-o8A" id="UBy-k7-s0T">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dby-yj-fNa">
+                                                    <rect key="frame" x="0.0" y="0.0" width="350" height="74"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njG-0t-Z53">
+                                                            <rect key="frame" x="0.0" y="0.0" width="220.66666666666666" height="74"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="500" text="Speach Part" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lxW-Rc-Wo5">
+                                                            <rect key="frame" x="230.66666666666666" y="0.0" width="119.33333333333334" height="74"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                                            <color key="textColor" systemColor="systemGrayColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Dby-yj-fNa" secondAttribute="bottom" id="A7a-FQ-67c"/>
+                                                <constraint firstItem="Dby-yj-fNa" firstAttribute="top" secondItem="UBy-k7-s0T" secondAttribute="top" id="LRs-G7-sAE"/>
+                                                <constraint firstItem="Dby-yj-fNa" firstAttribute="leading" secondItem="UBy-k7-s0T" secondAttribute="leading" id="ZcX-NG-GXC"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dby-yj-fNa" secondAttribute="trailing" id="lss-eD-9jc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="speachPartLabel" destination="lxW-Rc-Wo5" id="Lbr-9H-NB5"/>
+                                            <outlet property="wordLabel" destination="njG-0t-Z53" id="UAa-CE-U2M"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tc1-AQ-0a6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0K4-Nt-nCN" firstAttribute="centerY" secondItem="Fgi-RB-lvc" secondAttribute="centerY" constant="-78.5" id="NTl-3g-kgf"/>
+                            <constraint firstItem="ZZ2-33-RcT" firstAttribute="bottom" secondItem="tc1-AQ-0a6" secondAttribute="bottom" id="I5Q-lM-ZHb"/>
                             <constraint firstItem="tc1-AQ-0a6" firstAttribute="trailing" secondItem="0K4-Nt-nCN" secondAttribute="trailing" constant="20" id="Q9R-1t-AeG"/>
+                            <constraint firstItem="tc1-AQ-0a6" firstAttribute="trailing" secondItem="ZZ2-33-RcT" secondAttribute="trailing" constant="20" id="Xw8-h2-yqz"/>
                             <constraint firstItem="0K4-Nt-nCN" firstAttribute="leading" secondItem="tc1-AQ-0a6" secondAttribute="leading" constant="20" id="aah-o7-vAH"/>
+                            <constraint firstItem="ZZ2-33-RcT" firstAttribute="top" secondItem="0K4-Nt-nCN" secondAttribute="bottom" constant="20" id="kdN-s2-GLo"/>
+                            <constraint firstItem="ZZ2-33-RcT" firstAttribute="leading" secondItem="tc1-AQ-0a6" secondAttribute="leading" constant="20" id="mKc-Bx-m6N"/>
+                            <constraint firstItem="tc1-AQ-0a6" firstAttribute="top" secondItem="0K4-Nt-nCN" secondAttribute="top" constant="26" id="rEL-zX-zpl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="text.magnifyingglass" catalog="system" id="Eee-81-fVf"/>
                     <connections>
                         <outlet property="searchButton" destination="18p-Jv-0Dd" id="tmb-FJ-Fs7"/>
+                        <outlet property="searchTableView" destination="ZZ2-33-RcT" id="Fta-Fw-obU"/>
                         <outlet property="textField" destination="hg0-Uc-RVe" id="roa-CX-yL0"/>
                     </connections>
                 </viewController>
@@ -133,10 +181,27 @@
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="-865.17857142857144"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Nj-8L-jS2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gw-NP-CG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController id="F3L-tF-hrF" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N73-eo-5uo">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="J4o-jH-CeF" kind="relationship" relationship="rootViewController" id="EuA-iL-23i"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-684" y="-483"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3ho-nc-vEY">
             <objects>
                 <tabBarController id="J4o-jH-CeF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="NDl-mn-Xfc"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jPj-63-OYW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

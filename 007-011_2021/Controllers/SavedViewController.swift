@@ -30,7 +30,7 @@ extension SavedViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = savedTableView.dequeueReusableCell(withIdentifier: "SavedWordTableViewCell", for: indexPath) as? SavedWordTableViewCell else {
+        guard let cell = savedTableView.dequeueReusableCell(withIdentifier: "WordTableViewCell", for: indexPath) as? WordTableViewCell else {
             return UITableViewCell()
         }
         cell.configure(word: savedWords[indexPath.row])

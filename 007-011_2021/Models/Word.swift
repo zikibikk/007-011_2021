@@ -6,13 +6,9 @@
 //
 
 import Foundation
-class Word {
+class Word: Codable {
     
     let word: String
-    let speachPart: String
-    
-    init(word: String, part: String) {
-        self.word = word
-        self.speachPart = part
-    }
+//    let meanings: [String]?
+//    let definitions: [String]?
 }
