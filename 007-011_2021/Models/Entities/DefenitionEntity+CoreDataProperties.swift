@@ -2,7 +2,7 @@
 //  DefenitionEntity+CoreDataProperties.swift
 //  007-011_2021
 //
-//  Created by Alina Bikkinina on 19.12.2021.
+//  Created by Alina Bikkinina on 20.12.2021.
 //
 //
 
@@ -16,8 +16,15 @@ extension DefenitionEntity {
         return NSFetchRequest<DefenitionEntity>(entityName: "DefenitionEntity")
     }
 
-    @NSManaged public var definition: String?
-    @NSManaged public var meaning: MeaningEntity?
+    @NSManaged public var definition: String
+    @NSManaged public var example: String
+    @NSManaged public var meaning: MeaningEntity
+    
+    func setProperties(meaning: MeaningEntity, defenition: Definitions) {
+        self.meaning = meaning
+        self.definition = defenition.definition
+        self.example = defenition.example
+    }
 
 }
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="F3L-tF-hrF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="J4o-jH-CeF">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bwg-dU-3UH">
-                                <rect key="frame" x="20" y="93" width="350" height="658"/>
+                                <rect key="frame" x="20" y="49" width="350" height="702"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="WordTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="74" id="wEY-m6-p1N" customClass="WordTableViewCell" customModule="_07_011_2021" customModuleProvider="target">
@@ -161,13 +161,13 @@
                         <viewLayoutGuide key="safeArea" id="tc1-AQ-0a6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZZ2-33-RcT" firstAttribute="top" secondItem="hg0-Uc-RVe" secondAttribute="bottom" constant="20" id="36c-bs-Mfb"/>
                             <constraint firstItem="ZZ2-33-RcT" firstAttribute="bottom" secondItem="tc1-AQ-0a6" secondAttribute="bottom" id="I5Q-lM-ZHb"/>
                             <constraint firstItem="tc1-AQ-0a6" firstAttribute="trailing" secondItem="0K4-Nt-nCN" secondAttribute="trailing" constant="20" id="Q9R-1t-AeG"/>
                             <constraint firstItem="tc1-AQ-0a6" firstAttribute="trailing" secondItem="ZZ2-33-RcT" secondAttribute="trailing" constant="20" id="Xw8-h2-yqz"/>
                             <constraint firstItem="0K4-Nt-nCN" firstAttribute="leading" secondItem="tc1-AQ-0a6" secondAttribute="leading" constant="20" id="aah-o7-vAH"/>
-                            <constraint firstItem="ZZ2-33-RcT" firstAttribute="top" secondItem="0K4-Nt-nCN" secondAttribute="bottom" constant="20" id="kdN-s2-GLo"/>
+                            <constraint firstItem="0K4-Nt-nCN" firstAttribute="top" secondItem="Fgi-RB-lvc" secondAttribute="top" constant="62" id="kG5-pO-tp2"/>
                             <constraint firstItem="ZZ2-33-RcT" firstAttribute="leading" secondItem="tc1-AQ-0a6" secondAttribute="leading" constant="20" id="mKc-Bx-m6N"/>
-                            <constraint firstItem="tc1-AQ-0a6" firstAttribute="top" secondItem="0K4-Nt-nCN" secondAttribute="top" constant="26" id="rEL-zX-zpl"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="text.magnifyingglass" catalog="system" id="Eee-81-fVf"/>
@@ -180,22 +180,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NWh-Ex-mcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="-865.17857142857144"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="8Nj-8L-jS2">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gw-NP-CG1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController id="F3L-tF-hrF" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="N73-eo-5uo">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="J4o-jH-CeF" kind="relationship" relationship="rootViewController" id="EuA-iL-23i"/>
-                    </connections>
-                </navigationController>
-            </objects>
-            <point key="canvasLocation" x="-684" y="-483"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="3ho-nc-vEY">

@@ -12,26 +12,9 @@ class PersistableService {
     // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-        */
         let container = NSPersistentContainer(name: "_07_011_2021")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
-                /*
-                 Typical reasons for an error here include:
-                 * The parent directory does not exist, cannot be created, or disallows writing.
-                 * The persistent store is not accessible, due to permissions or data protection when the device is locked.
-                 * The device is out of space.
-                 * The store could not be migrated to the current model version.
-                 Check the error message to determine what the actual problem was.
-                 */
                 fatalError("Unresolved error \(error), \(error.userInfo)")
             }
         })
@@ -41,28 +24,84 @@ class PersistableService {
     lazy var viewContext = persistentContainer.viewContext
 
     // MARK: - Core Data Saving support
-
     func saveContext () {
         if viewContext.hasChanges {
             do {
                 try viewContext.save()
             } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
     }
     
-    func saveWord (word: Word) -> Void {
+    //MARK: - Core Data functions
+    //getting all containing words
+    func getWordsFromCD() -> [Word] {
+        let fetchRequest = WordEntity.fetchRequest()
+        var words: [Word] = []
+        do {
+            let wordsEntity = try viewContext.fetch(fetchRequest)
+            for wordEntity in wordsEntity {
+                words.append(Word(word: wordEntity.word, origin: wordEntity.origin, meanings: wordEntity.meanings.allObjects as? [Meanings] ?? []))
+            }
+        } catch {
+            print(error)
+        }
+        return words
+    }
+    
+    //additions
+    func addWordToCD(word: Word) {
         let wordEntity = WordEntity(context: viewContext)
-        wordEntity.word = word.word
-//        for part in word. {
-//            <#code#>
-//        }
+        wordEntity.setProperties(word: word)
         
+        for meaning in word.meanings {
+            addMeaningToCD(wordEntity: wordEntity, meaning: meaning)
+        }
         
         saveContext()
+    }
+    
+    func addMeaningToCD(wordEntity: WordEntity, meaning: Meanings) {
+        let meaningEntity = MeaningEntity(context: viewContext)
+        meaningEntity.setProperties(wordEntity: wordEntity, meaning: meaning)
+        
+        for defenition in meaning.definitions {
+            addDefenitionToCD(meaning: meaningEntity, defenition: defenition)
+        }
+    }
+    
+    func addDefenitionToCD(meaning: MeaningEntity, defenition: Definitions) {
+        let defEntity = DefenitionEntity(context: viewContext)
+        defEntity.setProperties(meaning: meaning, defenition: defenition)
+    }
+    
+    //repeating verification
+    func isAddedToCD(word: Word) -> Bool {
+        let fetchRequest = WordEntity.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "word == %@", word.word)
+        do {
+            let cdWord = try viewContext.fetch(fetchRequest)
+            if (!cdWord.isEmpty) {
+                return true
+            }
+        } catch {
+            print(error)
+        }
+        return false
+    }
+    
+    //removing
+    func deleteWord(word: Word) {
+        let fetchRequest = WordEntity.fetchRequest()
+        fetchRequest.predicate = NSPredicate(format: "word == %@", word.word)
+        do {
+            let words = try viewContext.fetch(fetchRequest)
+            let wordToDelete = words.first
+            viewContext.delete(wordToDelete!)
+        } catch {
+            print(error)
+        }
     }
 }

@@ -2,7 +2,7 @@
 //  MeaningEntity+CoreDataClass.swift
 //  007-011_2021
 //
-//  Created by Alina Bikkinina on 19.12.2021.
+//  Created by Alina Bikkinina on 20.12.2021.
 //
 //
 

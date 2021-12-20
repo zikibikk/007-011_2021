@@ -2,7 +2,7 @@
 //  MeaningEntity+CoreDataProperties.swift
 //  007-011_2021
 //
-//  Created by Alina Bikkinina on 19.12.2021.
+//  Created by Alina Bikkinina on 20.12.2021.
 //
 //
 
@@ -16,10 +16,15 @@ extension MeaningEntity {
         return NSFetchRequest<MeaningEntity>(entityName: "MeaningEntity")
     }
 
-    @NSManaged public var partOfSpeech: String?
-    @NSManaged public var defenitions: NSSet?
-    @NSManaged public var word: WordEntity?
+    @NSManaged public var partOfSpeech: String
+    @NSManaged public var defenitions: NSSet
+    @NSManaged public var word: WordEntity
 
+    func setProperties(wordEntity: WordEntity, meaning: Meanings) {
+        self.word = wordEntity
+        self.partOfSpeech = meaning.partOfSpeech
+        self.defenitions = NSSet(array: meaning.definitions ?? [])
+    }
 }
 
 // MARK: Generated accessors for defenitions

@@ -2,7 +2,7 @@
 //  WordEntity+CoreDataProperties.swift
 //  007-011_2021
 //
-//  Created by Alina Bikkinina on 19.12.2021.
+//  Created by Alina Bikkinina on 20.12.2021.
 //
 //
 
@@ -16,9 +16,15 @@ extension WordEntity {
         return NSFetchRequest<WordEntity>(entityName: "WordEntity")
     }
 
-    @NSManaged public var word: String?
-    @NSManaged public var meanings: NSSet?
-
+    @NSManaged public var word: String
+    @NSManaged public var origin: String
+    @NSManaged public var meanings: NSSet
+    
+    func setProperties(word: Word) {
+        self.word = word.word
+        self.meanings = NSSet(array: word.meanings ?? [])
+        self.origin = word.origin
+    }
 }
 
 // MARK: Generated accessors for meanings

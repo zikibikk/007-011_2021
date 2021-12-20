@@ -17,8 +17,6 @@ class SavedViewController: UIViewController {
         super.viewDidLoad()
         savedTableView.dataSource = self
         savedTableView.delegate = self
-        savedTableView.rowHeight = UITableView.automaticDimension;
-        savedTableView.estimatedRowHeight = 500.0
     }
 }
 

@@ -18,7 +18,7 @@ class SearchViewController: UIViewController {
     //MARK: - Private properties
     
     private let networkService: NetworkService = NetworkService()
-    var searchingWords: [Word] = []
+    private var searchingWords: [Word] = []
     
     //MARK: lifecycle
     
@@ -26,8 +26,6 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         searchTableView.dataSource = self
         searchTableView.delegate = self
-        searchTableView.rowHeight = UITableView.automaticDimension;
-        searchTableView.estimatedRowHeight = 500.0
     }
     
     //MARK: IBActions
